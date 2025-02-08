@@ -108,14 +108,17 @@
     "prefix": "post-header",
     "body": [
       "---
-title:
-date: 2024-0$1-$2
+title: ${1:meaningful title}
+date:
+  created: 2025-0${2}-${3}
+  updated: 2025-0${2}-${3}
 authors:
   - practicalli
 categories:
   - practicalli
 tags:
   - clojure
+draft: true
 ---
 
 $0
