@@ -154,7 +154,7 @@ return {
     "AstroNvim/astroui",
     ---@type AstroUIOpts
     opts = {
-      colorscheme = "everforest",
+      -- colorscheme = "everforest",
     },
   },
   -- Configure Everforest theme
