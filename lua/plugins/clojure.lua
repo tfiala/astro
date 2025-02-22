@@ -43,6 +43,10 @@ return {
       if opts.ensure_installed ~= "all" then
         opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, { "clojure" })
       end
+      -- tfiala: add babashka .bb files as clojure files
+      vim.filetype.add {
+        extension = { bb = "clojure" },
+      }
     end,
   },
 
