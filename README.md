@@ -4,7 +4,6 @@ Clojure development and more with [Neovim 0.10.x](https://neovim.org/) and [Astr
 
 > [Practicalli Neovim](https://practical.li/neovim/) describes the Clojure REPL workflow, rich Git and GitHub clients and easy management of plugins and tools using this configuration.
 
-**[Requires a local install of the Clojure LSP server until Mason Registry updated](#clojure-lsp)**
 
 ## 🛠️ Installation
 
@@ -68,13 +67,9 @@ Create your own `lua/plugins/user-name.lua` file to:
 
 ### Clojure LSP
 
-Mason is used to install LSP servers, format & lint tools which have their current versions defined in the Mason Registry.
+Mason is used to install LSP servers, format & lint tools.  [Mason Registry](https://mason-registry.dev/registry/list) maintains a list of the latest release for each tool (automatically updated).
 
-As of 17 December 2024, Practicalli astro is configured to use a locally installed Clojure LSP server to get the latest release.
-
-Install Clojure LSP from the [GitHub Releases](https://github.com/clojure-lsp/clojure-lsp/releases) or follow the [instructions for your operating system](https://clojure-lsp.io/installation/)
-
-Once Mason Repository [PR #7896 bump(clojure-lsp): update to v2024.11.08-17.49.29](https://github.com/mason-org/mason-registry/pull/7896) is merged, Practicalli Astro will revert to the Mason install of Clojure LSP
+Practicalli Astro can be configured to use a locally installed Clojure LSP server (using the [instructions for your operating system](https://clojure-lsp.io/installation/)).  A commented configuration example is included in [lua/plugins/user-practicalli.lua](https://github.com/practicalli/astro/blob/main/lua/plugins/user-practicalli.lua).
 
 
 ## Sponsor Practicalli

@@ -242,6 +242,9 @@ return {
           -- setting a mapping to false will disable it
           -- ["<esc>"] = false,
 
+          -- whick-key sub-menu for Visual-Multi Cursors (Multiple Cursors)
+          ["gm"] = { name = "Multiple Cursors" },
+
           -- Toggle last open buffer
           ["<Leader><tab>"] = { "<cmd>b#<cr>", desc = "Last tab" },
 
@@ -264,9 +267,6 @@ return {
             "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>",
             desc = "Grep Word",
           },
-
-          -- Projects
-          ["<Leader>fp"] = { "<cmd>Telescope projects<cr>", desc = "Projects" },
 
           -- Editing
           ["zZ"] = { "<cmd>ZenMode<cr>", desc = " Zen mode" },
